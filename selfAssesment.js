@@ -1,10 +1,14 @@
-/* let inch = 12;
+/*Question 1
+Conversion of Feet to Inch*/
+
+
+let inch = 12;
 
 let feet = 3;
 
 let inInch = feetToInch(inch,feet);
 
-console.log(feet + ' feet= ' + inInch + " Inch" )
+console.log(feet + ' feet = ' + inInch + " Inch" );
 
 function feetToInch(inch,feet){
 	
@@ -12,54 +16,60 @@ function feetToInch(inch,feet){
 
 	return resultInInch;
 
-}
- */
+};
 
 
-// //CentimeterToMeter
+/*Question 2
+Conversion of centimeter to  Meter*/
 
-/* let centM= 5;
+//CentimeterToMeter
+
+let centM= 5;
 let meter = 0.01;
 
 let inMeter = centimeterToMeter(centM,meter);
-console.log(inMeter)
+console.log(centM + " Centimeter is = " +  inMeter +" Meter")
 
 function centimeterToMeter(centiMParam,meterParam){
 	
 	let resultInMeter = centiMParam* meterParam;
 
 	return resultInMeter;
-} */
+}
 
 
-//PageRequirements Calculation
 
+/*Question 3
+Return the total page needed for printing the several copies of each book*/
 
-/* let book1 = 100;
+let book1 = 100;
 let book2 = 200;
 let book3 = 300;
 
 let pageCount = pageRequirements(2,3,4);
-console.log(pageCount)
+console.log("Number of pages needed for print is " + pageCount)
 
 function pageRequirements(book1Quantity,book2Quantity,book3Quantity){
 		let numberTotalPage = (book1*book1Quantity) + (book2*book2Quantity) + (book3*book3Quantity);
 
 		return numberTotalPage;
-} */
+} 
 
-/* const bestFriendName = ['shamim ahmed','tanvir ahmed','masum','zunayed','sazzad']
+
+
+
+/*Question 4
+Return the largest string from the array list*/
+
+const bestFriendName = ['shamim ahmed','tanvir ahmed','masum','zunayed','sazzad']
 
 const largeName  = bestFriend(bestFriendName);
 
-console.log(largeName);
-
-
+console.log("Best Friend name is " + largeName);
 
 function bestFriend(bestFriendNameList){
 	
 	let mxLength = bestFriendNameList[0].length;
-	// console.log(mxLength)
 	let mxLengthName = '';
 
 	for(const friend of bestFriendNameList){
@@ -67,24 +77,25 @@ function bestFriend(bestFriendNameList){
 			mxLength = friend.length;
 		};
 	};
-	// console.log(bestFriendNameList)
 	for(const fr of bestFriendNameList){
 		if (fr.length == mxLength){
 			 mxLengthName = fr;
-			// console.log(mxLengthName)
 			break;
 		};
 	};
 
 	return mxLengthName;
 
-} */
+} 
+
+
+/*Question 5 
+Return only Positive Number From array,Break the loop if negative is found*/
 
 const postiveNegativeArray = [5,6,7,8,9,11,14,24,16,18,20,-70,32,35,23,453,23]
-
-const onlyPos=[]  
+const onlyPos=[]
 onlyPositive(postiveNegativeArray)
-console.log(onlyPos)
+console.log("Positives numbers are: " + onlyPos)
 
 function onlyPositive(){
 	for (const positive of postiveNegativeArray) {
@@ -96,9 +107,11 @@ function onlyPositive(){
 			break;
 		}
 	};
-	//return onlyPositive
+	return onlyPositive
 }
 
+/* End of self assesment */
 
+console.log("Be Confidence and  go ahead");
 
 
